@@ -293,9 +293,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-5 col-md-5 col-12">
+            <div className="col-xl-5 col-md-12 col-12">
               <div className="row">
-                <div className="col-12">
+                <div className="col-xl-12 col-md-6">
                   <div style={{height: heightDesignBox / 2}} className={"img-colum-1 mb-3"}>
                     <div className="container">
                       <h1
@@ -306,7 +306,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12">
+                <div className="col-xl-12 col-md-6">
                   <div style={{height: heightDesignBox / 2}} className={"img-colum-2"}>
                     <div className={"container"}>
                       <h1
