@@ -9,6 +9,7 @@ import btnChPlay from "../assets/images/btn-ch-play.png";
 import btnAppstore from "../assets/images/appstore-btn.png";
 import LogoSmall from "../assets/images/logo-small.png"
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer: React.FunctionComponent = () => {
   return (
@@ -47,27 +48,33 @@ const Footer: React.FunctionComponent = () => {
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Social</h4>
               <div className={"mt-4"}>
                 <div>
-                  <Image src={discord} height={30} alt={""}/>
-                  <Image className={"mx-3"} src={telegram} height={30} alt={""}/>
-                  <Image src={facebook} height={30} alt={""}/>
+                  <a href="" target={"_blank"}><Image src={discord} height={30} alt={""}/></a>
+                  <a href="" target={"_blank"}> <Image className={"mx-3"} src={telegram} height={30} alt={""}/></a>
+                  <a href="" target={"_blank"}> <Image src={facebook} height={30} alt={""}/></a>
                 </div>
                 <div className={"mt-4"}>
-                  <Image src={youtube} height={30} alt={""}/>
-                  <Image className={"mx-3"} src={twitter} height={30} alt={""}/>
-                  <Image src={inImg} height={30} alt={""}/>
+                  <a href="" target={"_blank"}><Image src={youtube} height={30} alt={""}/></a>
+                  <a href="" target={"_blank"}> <Image className={"mx-3"} src={twitter} height={30} alt={""}/></a>
+                  <a href="" target={"_blank"}> <Image src={inImg} height={30} alt={""}/></a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-xl-2 col-md-3 col-9">
+          <div className="col-xl-2 col-md-3 col-12">
             <h4 style={{fontWeight: 700}} className={"mb-3"}>Fin Us On</h4>
-            <div className={"d-flex"}>
-              <div>
-                <div className={"mb-3"}><Image src={btnChPlay} style={{width: "100%", height: "auto"}} alt={""}/></div>
-                <div className={"mb-3"}><Image src={btnAppstore} style={{width: "100%", height: "auto"}} alt={""}/></div>
+            <div className={"fin-us-on"}>
+              <div className={"mb-3"}>
+                <Link href={""} target={"_blank"} className={"mb-3"}>
+                  <Image src={btnChPlay} style={{width: "100%", height: "auto"}} alt={""}/>
+                </Link>
+                <Link href={""} target={"_blank"} className={"mb-3"}>
+                  <Image className={"mt-2"} src={btnAppstore} style={{width: "100%", height: "auto"}} alt={""}/>
+                </Link>
               </div>
-              <div className={"text-center w-100 d-flex justify-content-center mt-"}>
-                <Image src={LogoSmall} height={90} alt={""}/>
+              <div className={"text-center w-100 d-flex justify-content-center "}>
+                <Link href={"/"}>
+                  <Image src={LogoSmall} height={90} alt={""}/>
+                </Link>
               </div>
             </div>
           </div>

@@ -88,7 +88,7 @@ body {
     position: relative;
     margin-top: -1px;
     background-image: url("../common/assets/images/bg_1.webp");
-    height: calc(100vh - 109px);
+    height: calc(100vh - 92px);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -119,6 +119,10 @@ body {
 }
 
 @media (max-width: 576px) {
+    .fin-us-on{
+        display: flex !important;
+        align-items: center;
+    }
     .logo {
         width: 125px !important;
         height: auto !important;

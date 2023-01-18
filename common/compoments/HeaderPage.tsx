@@ -39,7 +39,9 @@ const HeaderPage: React.FunctionComponent = () => {
     <div>
       <div className="header">
         <div className="d-flex justify-content-between align-items-center">
-          <Image className={"logo"} height={40} src={logo} alt={"Logo"}/>
+          <Link href={"/"}>
+            <Image className={"logo"} height={40} src={logo} alt={"Logo"}/>
+          </Link>
           <div style={{position: "relative"}}>
             <input className="input_search" type="text" placeholder="Search Bar"/>
             <i className="fa-solid fa-magnifying-glass"></i>
@@ -59,7 +61,9 @@ const HeaderPage: React.FunctionComponent = () => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-              Offcanvas
+              <Link href={"/"}>
+                <Image className={"logo"} height={40} src={logo} alt={"Logo"}/>
+              </Link>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
