@@ -161,6 +161,9 @@ a{
 }
 
 @media (max-width: 976px) {
+    .slick_slider{
+        bottom: 0rem;
+    }
     .app-box,.web-box,.design-box{
         padding: 1rem 2rem 5rem 2rem !important;
     }
@@ -176,6 +179,11 @@ a{
     }
     .offcanvas-body{
         padding: 0 !important;
+    }
+}
+@media (max-width: 376px) {
+    .slick_slider{
+       display: none;
     }
 }
 .navbar-toggler-icon{
