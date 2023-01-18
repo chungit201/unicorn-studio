@@ -9,6 +9,7 @@ import Footer from "@/common/compoments/Footer";
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import ProgressBarComponent from '@/common/compoments/TopBarProgress';
+import Head from "next/head";
 
 export default function App({Component, pageProps}: AppProps) {
   const [progress, setProgress] = useState(false)
@@ -34,6 +35,9 @@ export default function App({Component, pageProps}: AppProps) {
   return (
     <SSRProvider>
       {progress && <ProgressBarComponent/>}
+      <Head>
+        <title>Unicron Studio</title>
+      </Head>
       <div className={"bg__page"}>
         <HeaderPage/>
         <MainLayout/>
