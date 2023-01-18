@@ -29,7 +29,9 @@ import ai from "../common/assets/images/fram-work/ai.png";
 import ps from "../common/assets/images/fram-work/ps.png";
 import xd from "../common/assets/images/fram-work/xd.png";
 import gameDesign from "../common/assets/images/bg33.png";
-
+// @ts-ignore
+const isServer = typeof window === 'undefined'
+const WOW = !isServer ? require('wowjs') : null
 import {useEffect, useState} from "react";
 
 export default function Home() {
@@ -39,15 +41,21 @@ export default function Home() {
     const heightControl: any = document.querySelector('#design-img');
     setHeightDesignBox(heightControl.offsetHeight - 15)
     console.log("g", heightControl.offsetHeight)
-  }, [])
+  }, []);
+
+  useEffect(() => {
+    (async () => {
+      new WOW.WOW().init();
+    })()
+  }, []);
 
   return (
 
     <div>
       <div className="banner">
         <div className="h-100">
-          <div className="main-content-banner m-auto">
-            <h1 className="banner-title">Make to Be Played</h1>
+          <div className="wow animate__animated animate__fadeIn main-content-banner m-auto">
+            <h1 className="banner-title ">Make to Be Played</h1>
             <h4 className="intro-desc">The Very Best in Metaverse Gaming</h4>
             <div className="mt-5">
               <a href="">
@@ -64,23 +72,25 @@ export default function Home() {
         </div>
       </div>
       <div className={"main-content-banner py-5"}>
-        <div className={"text-center section-1"}>
-          <h3 className="intro-desc text-center mb-0">About Unicorn</h3>
-          <h2 className="title-title text-center mt-3">Become Word-class <br/> Game Studio</h2>
-          <p className={"text-center mt-3 mb-0"}>
-            Established in 2020, our vision is to become a world-class game studio,<br/>
-            creating world-class games with stunning visual and addictive gameplay.<br/>
-            We hope you could be a part of our unbelievable journey.
-          </p>
-          <div className={"d-flex justify-content-center"} style={{position: "relative"}}>
-            <div className={"btn-group"}>
-              <button className={"btn-learn-more mt-4"}>
-              </button>
-              <span className={"learn-more-text"}>Learn more</span>
+        <div className={" text-center section-1"}>
+          <div className={"wow animate__animated animate__fadeInUp"}>
+            <h3 className="intro-desc text-center mb-0">About Unicorn</h3>
+            <h2 className="title-title text-center mt-3">Become Word-class <br/> Game Studio</h2>
+            <p className={"text-center mt-3 mb-0"}>
+              Established in 2020, our vision is to become a world-class game studio,<br/>
+              creating world-class games with stunning visual and addictive gameplay.<br/>
+              We hope you could be a part of our unbelievable journey.
+            </p>
+            <div className={"d-flex justify-content-center"} style={{position: "relative"}}>
+              <div className={"btn-group"}>
+                <button className={"btn-learn-more mt-4"}>
+                </button>
+                <span className={"learn-more-text"}>Learn more</span>
+              </div>
             </div>
           </div>
           <div className="grid-box">
-            <div className={"product_box_software  p-3"}>
+            <div className={"product_box_software wow animate__animated animate__slideInLeft p-3"}>
               <h2 className="title-title text-center ">Software <br/>Development</h2>
               <div className={"mt-4"}>
                 <div>Product development</div>
@@ -98,7 +108,7 @@ export default function Home() {
               </div>
               <Image className={"sc-1-img"} src={Word2} alt={""}/>
             </div>
-            <div className={"product_box_solution  p-3"}>
+            <div className={"product_box_solution wow animate__animated animate__slideInRight p-3"}>
               <h2 className="title-title text-center ">Enterprise <br/>Solution</h2>
               <div className={"mt-4"}>
                 <div>Product development</div>
@@ -114,7 +124,7 @@ export default function Home() {
           <h1 className={"title-title text-center"}>Provide <span style={{color: "#fe954f"}}>Solution Service</span>
           </h1>
           <div className={"gird-provide mt-5"}>
-            <div className={"p-3"}>
+            <div className={"wow animate__animated animate__fadeInLeft p-3"}>
               <div className={"title-title text-center STT"}>01</div>
               <h4 className={"title-title text-center"}>Web Application</h4>
               <div className={"p-3 text-center"}>
@@ -128,7 +138,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"} style={{marginTop: "3.5rem"}}>
+            <div className={"p-3 wow animate__animated animate__fadeInUpBig"} style={{marginTop: "3.5rem"}}>
               <div className={"title-title text-center STT"}>02</div>
               <h4 className={"title-title text-center"}>Mobile Application</h4>
               <div className={"p-3 text-center"}>
@@ -142,7 +152,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"}>
+            <div className={" p-3 wow animate__animated animate__fadeInUpBig"}>
               <div className={"title-title text-center STT"}>03</div>
               <h4 className={"title-title text-center"}>E-learning</h4>
               <div className={"p-3 text-center"}>
@@ -156,7 +166,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"} style={{marginTop: "3.5rem"}}>
+            <div className={"p-3 wow animate__animated animate__fadeInRight"} style={{marginTop: "3.5rem"}}>
               <div className={"title-title text-center STT"}>04</div>
               <h4 className={"title-title text-center"}>E-commerce</h4>
               <div className={"p-3 text-center"}>
@@ -170,7 +180,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"}>
+            <div className={"p-3 wow animate__animated animate__fadeInLeft"}>
               <div className={"title-title text-center STT"}>05</div>
               <h4 className={"title-title text-center"}>HR System</h4>
               <div className={"p-3 text-center"}>
@@ -184,7 +194,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"} style={{marginTop: "3.5rem"}}>
+            <div className={"p-3 wow animate__animated animate__fadeInUpBig"} style={{marginTop: "3.5rem"}}>
               <div className={"title-title text-center STT"}>06</div>
               <h4 className={"title-title text-center"}>Sharing Economy</h4>
               <div className={"p-3 text-center"}>
@@ -198,7 +208,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"}>
+            <div className={"p-3 wow animate__animated animate__fadeInUpBig"}>
               <div className={"title-title text-center STT"}>07</div>
               <h4 className={"title-title text-center"}>Sales Management <br/> System</h4>
               <div className={"p-3 text-center"}>
@@ -212,7 +222,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3"} style={{marginTop: "3.5rem"}}>
+            <div className={"p-3 wow animate__animated animate__fadeInRight"} style={{marginTop: "3.5rem"}}>
               <div className={"title-title text-center STT"}>08</div>
               <h4 className={"title-title text-center"}>Video Streaming</h4>
               <div className={"p-3 text-center"}>
@@ -232,7 +242,7 @@ export default function Home() {
         <div className={"section"}>
           <h1 className={"title-title text-center"}>Applied <span style={{color: "#fe954f"}}>Technology</span></h1>
           <div className="grid-box mt-5">
-            <div className={"app-box"}>
+            <div className={"app-box wow animate__animated animate__fadeIn"}>
               <h1 className="title-title ">App <br/>Development</h1>
               <div className={"mt-5"}>
                 <div className={"mb-4"}><Image height={20} src={reactNative} alt={""}/></div>
@@ -242,7 +252,7 @@ export default function Home() {
                 <div className={"mb-4"}><Image height={25} src={unity} alt={""}/></div>
               </div>
             </div>
-            <div className={"web-box  p-4"}>
+            <div className={"web-box wow animate__animated animate__fadeIn p-4"}>
               <h2 className="title-title  ">Web <br/> Development</h2>
               <div className={"mt-5"}>
                 <div className={"mb-4"}><Image height={35} src={java} alt={""}/></div>
@@ -252,7 +262,7 @@ export default function Home() {
                 <div className={"mb-4"}><Image height={20} src={php} alt={""}/></div>
               </div>
             </div>
-            <div className={"design-box  p-4"}>
+            <div className={"design-box wow animate__animated animate__fadeIn p-4"}>
               <h2 className="title-title  ">Design <br/>Creative</h2>
               <div className={"mt-5"}>
                 <div className={"mb-4"}><Image height={30} src={figma} alt={""}/></div>
@@ -314,7 +324,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={"section"}>
+        <div className={"section wow animate__animated animate__fadeInUp"}>
           <h4 className={"title-title text-center"}>150 + Project</h4>
           <h1 style={{color: "#fe954f"}} className={"title-title text-center"}>
             Projects In Various Fields
