@@ -113,7 +113,6 @@ body {
     z-index: 10;
 }
 
-
 .slick-slide img {
     width: 100%;
 }
@@ -394,4 +393,16 @@ body {
     .training_desc{
         font-size: 14px !important;
     }
+}
+.btn-next{
+    position: absolute;
+    right: 1rem;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.btn-prev{
+    position: absolute;
+    left: 1rem;
+    bottom: 50%;
+    transform: translateY(50%);
 }

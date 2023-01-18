@@ -33,6 +33,7 @@ import gameDesign from "../common/assets/images/bg33.png";
 const isServer = typeof window === 'undefined'
 const WOW = !isServer ? require('wowjs') : null
 import {useEffect, useState} from "react";
+import Slider from "@/common/compoments/Slider";
 
 export default function Home() {
   const [heightDesignBox, setHeightDesignBox] = useState(0);
@@ -66,7 +67,7 @@ export default function Home() {
             </div>
           </div>
           <div className={"slick_slider"}>
-            <BannerSlider/>
+            <Slider/>
           </div>
         </div>
       </div>
