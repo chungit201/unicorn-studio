@@ -133,6 +133,51 @@ body {
     .sign-in-text {
         font-size: 14px !important;
     }
+    .grid-box{
+        grid-template-columns: repeat(1, 1.3fr) !important;
+        grid-gap: 1rem !important;
+    }
+    .gird-provide{
+        grid-template-columns: repeat(1, 1.3fr) !important;
+        grid-gap: 1rem !important;
+    }
+    .info-image{
+        width: 100% !important;
+    }
+    .mobile-none{
+        display: none;
+    }
+    .subscribe{
+        padding: 1rem !important;
+    }
+    .main-content-banner{
+        width: 90% !important;
+    }
+
+}
+
+@media (max-width: 976px) {
+    .app-box,.web-box,.design-box{
+        padding: 1rem 2rem 5rem 2rem !important;
+    }
+    .img-colum-1,.img-colum-2,.img-colum-3{
+        width: 100% !important;
+        height: 200px !important;
+    }
+    .offcanvas{
+        background-color: #3d3d3d !important;
+    }
+    .grid-box{
+        grid-gap: 0.5rem !important;
+    }
+    .offcanvas-body{
+        padding: 0 !important;
+    }
+}
+.navbar-toggler-icon{
+    color: #FFFFFF;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(255 255 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
 .carousel-slide-item__body {
@@ -304,7 +349,7 @@ body {
     background-repeat: no-repeat;
 }
 .subscribe{
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 15px;
     border: 1px solid #ffffff;
 }
@@ -334,4 +379,19 @@ body {
 }
 .navbar-nav .active{
     background: #2a2a2a !important;
+}
+.btn-group:hover{
+    color: #FFFFFF;
+}
+@media (max-width: 1200px) {
+    .gird-provide{
+        grid-template-columns: repeat(2, 1.3fr);
+        grid-gap: 4.5rem;
+    }
+    .training{
+        font-size: 24px !important;
+    }
+    .training_desc{
+        font-size: 14px !important;
+    }
 }

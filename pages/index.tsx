@@ -50,7 +50,6 @@ export default function Home() {
   }, []);
 
   return (
-
     <div>
       <div className="banner">
         <div className="h-100">
@@ -82,11 +81,10 @@ export default function Home() {
               We hope you could be a part of our unbelievable journey.
             </p>
             <div className={"d-flex justify-content-center"} style={{position: "relative"}}>
-              <div className={"btn-group"}>
-                <button className={"btn-learn-more mt-4"}>
-                </button>
+              <a href={""} className={"btn-group"}>
+                <button className={"btn-learn-more mt-4"}></button>
                 <span className={"learn-more-text"}>Learn more</span>
-              </div>
+              </a>
             </div>
           </div>
           <div className="grid-box">
@@ -277,14 +275,14 @@ export default function Home() {
 
         <div>
           <div className={"row gy-2"}>
-            <div className="col-7">
+            <div className="col-xl-7 col-12">
               <div style={{position: "relative"}}>
                 <Image id={"design-img"} className={"w-100"} style={{height: "auto"}} src={gameDesign} alt={""}/>
-                <div className={"container w-75"} style={{position: "absolute", zIndex: 10, bottom: "5px"}}>
-                  <h1 className={"title-title"} style={{color: "#b2ffec"}}>HR training and development are
+                <div className={"container w-75 mobile-none"} style={{position: "absolute", zIndex: 10, bottom: "5px"}}>
+                  <h1 className={"title-title training"} style={{color: "#b2ffec"}}>HR training and development are
                     prioritized</h1>
                   <h5 className={"title-title"}>Unicorn Launching Center (UNC)</h5>
-                  <p className={"title-title"} style={{color: "#bdbdbd"}}>
+                  <p className={"title-title training_desc"} style={{color: "#bdbdbd"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -294,13 +292,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-xl-5 col-md-5 col-12">
               <div className="row">
                 <div className="col-12">
                   <div style={{height: heightDesignBox / 2}} className={"img-colum-1 mb-3"}>
                     <div className="container">
                       <h1
-                        className={"title-title"}
+                        className={"title-title training"}
                         style={{color: "#ffe58c", position: "absolute", bottom: "10px"}}>
                         Develop professional skills
                       </h1>
@@ -311,7 +309,7 @@ export default function Home() {
                   <div style={{height: heightDesignBox / 2}} className={"img-colum-2"}>
                     <div className={"container"}>
                       <h1
-                        className={"title-title"}
+                        className={"title-title training"}
                         style={{color: "#aaffae", position: "absolute", bottom: "10px"}}
                       >
                         Cultural training Unicron
@@ -353,20 +351,20 @@ export default function Home() {
 
         <div className={"section"}>
           <div className="row d-flex justify-content-center">
-            <div className="col-8">
+            <div className="col-xl-10 col-md-10 col-12">
               <div className={"subscribe"}>
-                <div className="row">
-                  <div className="col-4">
+                <div className="row gy-3">
+                  <div className="col-xl-4 col-12">
                     <h1 className={"title-title mb-0"}>Our <span style={{color: "#fe954f"}}>Newsletter</span></h1>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-xl-6 col-12 d-flex align-items-center">
                     <input
                       className={"w-100 input-sub"}
                       placeholder={"Enter Your Email....."}
                       type="text"
                     />
                   </div>
-                  <div className="col-2 d-flex align-items-center">
+                  <div className="col-xl-2 col-md-6 d-flex align-items-center">
                     <button className={"btn-subscribe"}>Subscribe</button>
                   </div>
                 </div>
@@ -376,6 +374,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-
   )
 }

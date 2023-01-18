@@ -14,9 +14,9 @@ const Footer: React.FunctionComponent = () => {
   return (
     <div className={"footer"}>
       <div className="container">
-        <div className="row gx-5">
-          <div className="col-4">
-            <div className={"px-4"}>
+        <div className="row gx-xl-5 gx-md-3 gy-5">
+          <div className="col-xl-4 col-md-6 col-12">
+            <div className={""}>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Contact</h4>
               <ul>
                 <li className={"mb-2"}><b>Email</b>:</li>
@@ -30,7 +30,7 @@ const Footer: React.FunctionComponent = () => {
               </ul>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-xl-3 col-md-6 col-12">
             <div>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Navigation</h4>
               <ul>
@@ -42,7 +42,7 @@ const Footer: React.FunctionComponent = () => {
               </ul>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-xl-3 col-md-6 col-7">
             <div>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Social</h4>
               <div className={"mt-4"}>
@@ -59,7 +59,7 @@ const Footer: React.FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-xl-2 col-md-6 col-5">
             <div>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Fin Us On</h4>
               <div className={"mb-3"}><Image src={btnChPlay} style={{width: "100%", height: "auto"}} alt={""}/></div>

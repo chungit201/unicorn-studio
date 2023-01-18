@@ -50,20 +50,20 @@ const HeaderPage: React.FunctionComponent = () => {
           </Link>
         </div>
       </div>
-      <Navbar expand={'xl'}>
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`}/>
+      <Navbar expand={'md'}>
+        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`}/>
         <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-xl`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
+          id={`offcanvasNavbar-expand-md`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-md`}
           placement="end"
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
+            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
               Offcanvas
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-center flex-grow-1 pe-3">
+            <Nav className="justify-content-center flex-grow-1">
               <Link className={`nav-link ${getActiveKey() === NAV.HOME_PAGE && "active"}`} href={"/"}>Home</Link>
               <Link className={`nav-link ${getActiveKey() === NAV.GAME && "active"}`} href={"/games"}>Games</Link>
               <Link className={`nav-link ${getActiveKey() === NAV.CAREERS && "active"}`} href={"/careers"}>Careers</Link>
