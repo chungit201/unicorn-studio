@@ -14,7 +14,7 @@ const Footer: React.FunctionComponent = () => {
   return (
     <div className={"footer"}>
       <div className="container">
-        <div className="row gx-xl-5 gx-md-3 gy-5">
+        <div className="row gx-xl-5 gx-md-5 gy-5">
           <div className="col-xl-4 col-md-6 col-12">
             <div className={""}>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Contact</h4>
@@ -30,7 +30,7 @@ const Footer: React.FunctionComponent = () => {
               </ul>
             </div>
           </div>
-          <div className="col-xl-3 col-md-6 col-12">
+          <div className="col-xl-3 col-md-6 col-6">
             <div>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Navigation</h4>
               <ul>
@@ -42,7 +42,7 @@ const Footer: React.FunctionComponent = () => {
               </ul>
             </div>
           </div>
-          <div className="col-xl-3 col-md-6 col-7">
+          <div className="col-xl-3 col-md-6 col-6">
             <div>
               <h4 style={{fontWeight: 700}} className={"mb-3"}>Social</h4>
               <div className={"mt-4"}>
@@ -59,14 +59,16 @@ const Footer: React.FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-2 col-md-6 col-5">
-            <div>
-              <h4 style={{fontWeight: 700}} className={"mb-3"}>Fin Us On</h4>
-              <div className={"mb-3"}><Image src={btnChPlay} style={{width: "100%", height: "auto"}} alt={""}/></div>
-              <div className={"mb-3"}><Image src={btnAppstore} style={{width: "100%", height: "auto"}} alt={""}/></div>
-            </div>
-            <div className={"text-center w-100 d-flex justify-content-center mt-"}>
-              <Image src={LogoSmall} height={90} alt={""}/>
+          <div className="col-xl-2 col-md-3 col-9">
+            <h4 style={{fontWeight: 700}} className={"mb-3"}>Fin Us On</h4>
+            <div className={"d-flex"}>
+              <div>
+                <div className={"mb-3"}><Image src={btnChPlay} style={{width: "100%", height: "auto"}} alt={""}/></div>
+                <div className={"mb-3"}><Image src={btnAppstore} style={{width: "100%", height: "auto"}} alt={""}/></div>
+              </div>
+              <div className={"text-center w-100 d-flex justify-content-center mt-"}>
+                <Image src={LogoSmall} height={90} alt={""}/>
+              </div>
             </div>
           </div>
         </div>
