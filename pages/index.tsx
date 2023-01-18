@@ -65,9 +65,9 @@ export default function Home() {
               </a>
             </div>
           </div>
-          {/*<div className={"slick_slider"}>*/}
-          {/*  <BannerSlider/>*/}
-          {/*</div>*/}
+          <div className={"slick_slider"}>
+            <BannerSlider/>
+          </div>
         </div>
       </div>
       <div className={"main-content-banner py-5"}>

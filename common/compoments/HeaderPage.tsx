@@ -75,7 +75,6 @@ const HeaderPage: React.FunctionComponent = () => {
               <Link className={`nav-link ${getActiveKey() === NAV.CONTACT && "active"}`} href={"/contact"}>Contact</Link>
               <Link className={`nav-link ${getActiveKey() === NAV.PORTFOLIO && "active"}`} href={"/portfolio"}>Portfolio</Link>
             </Nav>
-
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Navbar>
