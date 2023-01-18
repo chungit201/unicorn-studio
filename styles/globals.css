@@ -22,7 +22,10 @@ body {
     color: #FFFFFF !important;
     background: #2a2a2a !important;
 }
-
+a{
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
 .banner-title {
     font-family: Aachen, sans-serif;
     color: #FFFFFF;
