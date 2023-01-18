@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import GooglePlayImage from "../common/assets/images/google-play.png"
 import AppstoreImg from "../common/assets/images/appstore.png";
-import BannerSlider from "../common/compoments/BannerSlider";
 import sc1 from "../common/assets/images/toppng.webp";
 import Word2 from "../common/assets/images/work2.png";
 import Word3 from "../common/assets/images/work3.png";
@@ -72,7 +71,7 @@ export default function Home() {
         </div>
       </div>
       <div className={"main-content-banner py-5"}>
-        <div className={" text-center section-1"}>
+        <div className={" text-center section"}>
           <div className={"wow animate__animated animate__fadeInUp"}>
             <h3 className="intro-desc text-center mb-0">About Unicorn</h3>
             <h2 className="title-title text-center mt-3">Become Word-class <br/> Game Studio</h2>
@@ -352,7 +351,7 @@ export default function Home() {
 
         <div className={"section"}>
           <div className="row d-flex justify-content-center">
-            <div className="col-xl-10 col-md-10 col-12">
+            <div className="col-xxl-8 col-xl-10 col-md-10 col-12">
               <div className={"subscribe"}>
                 <div className="row gy-3">
                   <div className="col-xl-4 col-12">

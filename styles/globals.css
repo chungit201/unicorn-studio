@@ -111,7 +111,7 @@ a{
 .slick_slider {
     /*overflow: hidden;*/
     position: absolute;
-    bottom: -30px;
+    bottom: -10rem;
     width: 100%;
     z-index: 10;
 }
@@ -351,7 +351,7 @@ a{
     background-repeat: no-repeat;
 }
 .subscribe{
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 15px;
     border: 1px solid #ffffff;
 }
@@ -359,14 +359,14 @@ a{
     outline: none;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 10px;
     background: #131212 !important;
 }
 .btn-subscribe{
     background: #ee7709;
     border: none;
-    padding: 0.4rem;
+    padding: 0.6rem;
     color: #ffffff;
     width: 100%;
     font-weight: 600;
