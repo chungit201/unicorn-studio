@@ -87,8 +87,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="grid-box">
-            <div className={"product_box_software wow animate__animated animate__slideInLeft p-3"}>
+          <div className="grid-box wow animate__animated animate__fadeInLeft">
+            <div className={"product_box_software p-3"}>
               <h2 className="title-title text-center ">Software <br/>Development</h2>
               <div className={"mt-4"}>
                 <div>Product development</div>
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
               <Image className={"sc-1-img"} src={Word2} alt={""}/>
             </div>
-            <div className={"product_box_solution wow animate__animated animate__slideInRight p-3"}>
+            <div className={"product_box_solution    p-3"}>
               <h2 className="title-title text-center ">Enterprise <br/>Solution</h2>
               <div className={"mt-4"}>
                 <div>Product development</div>
@@ -164,7 +164,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3 wow animate__animated animate__fadeInRight"} style={{marginTop: "3.5rem"}}>
+            <div className={"p-3 wow animate__animated animate__fadeInDownBig"} style={{marginTop: "3.5rem"}}>
               <div className={"title-title text-center STT"}>04</div>
               <h4 className={"title-title text-center"}>E-commerce</h4>
               <div className={"p-3 text-center"}>
@@ -220,7 +220,7 @@ export default function Home() {
                 deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className={"p-3 wow animate__animated animate__fadeInRight"} style={{marginTop: "3.5rem"}}>
+            <div className={"p-3 wow animate__animated animate__fadeInDownBig"} style={{marginTop: "3.5rem"}}>
               <div className={"title-title text-center STT"}>08</div>
               <h4 className={"title-title text-center"}>Video Streaming</h4>
               <div className={"p-3 text-center"}>
