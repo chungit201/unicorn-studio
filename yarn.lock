@@ -1927,6 +1927,11 @@ react-transition-group@^4.4.2:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-whirligig@^6.6.15:
+  version "6.6.15"
+  resolved "https://registry.yarnpkg.com/react-whirligig/-/react-whirligig-6.6.15.tgz#c3dfdb348b6609d5980b1ddb8bf884977443f7c4"
+  integrity sha512-XdpemECafwICwpQVl1pztr9yE/26C2RdXhuZHTlMCksCtisX68MYRvM0qA7MA1f86dKwRRvA6exML0U0fdxkfg==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"

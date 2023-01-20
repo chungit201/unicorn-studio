@@ -175,7 +175,7 @@ a{
         background-color: #3d3d3d !important;
     }
     .grid-box{
-        grid-gap: 2.5rem !important;
+        grid-gap: 0.5rem !important;
     }
     .offcanvas-body{
         padding: 0 !important;
@@ -416,4 +416,17 @@ a{
     left: 1rem;
     bottom: 50%;
     transform: translateY(50%);
+}
+.slider-whir{
+    overflow: hidden !important;
+}
+.frame_inactive{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.slider-desc{
+    box-shadow: 10px 10px 88px 7px #000;
+    background: #00000070
 }
