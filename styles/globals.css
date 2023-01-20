@@ -121,6 +121,9 @@ a{
 }
 
 @media (max-width: 576px) {
+    .slick_slider{
+        display: none;
+    }
     .fin-us-on{
         display: flex !important;
         align-items: center;
@@ -161,6 +164,7 @@ a{
 }
 
 @media (max-width: 976px) {
+
     .slick_slider{
         bottom: 0rem;
     }
@@ -182,9 +186,7 @@ a{
     }
 }
 @media (max-width: 376px) {
-    .slick_slider{
-       display: none;
-    }
+
 }
 .navbar-toggler-icon{
     color: #FFFFFF;
