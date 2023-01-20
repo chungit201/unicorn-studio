@@ -430,3 +430,7 @@ a{
     box-shadow: 10px 10px 88px 7px #000;
     background: #00000070
 }
+.navbar-toggler{
+    border:none!important;
+    box-shadow: none !important;
+}

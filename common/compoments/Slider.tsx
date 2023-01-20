@@ -28,7 +28,7 @@ const Slider: React.FunctionComponent = () => {
         }}
       >
         <div style={{position: "relative"}}>
-          <Image className={"w-100"} style={{height: "auto"}} alt={""} src={slider1}/>
+          <Image className={"w-100"} style={{height: "40%"}} alt={""} src={slider1}/>
           <Image className={"frame_inactive"} src={frame_inactive} alt={""}/>
           <div className={"p-3 slider-desc"} style={{position:'absolute',bottom:0}}>
             <h2 className={"title-title"}>Startverse</h2>
