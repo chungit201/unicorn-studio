@@ -63,12 +63,12 @@ const Footer: React.FunctionComponent = () => {
           <div className="col-xl-2 col-md-3 col-12">
             <h4 style={{fontWeight: 700}} className={"mb-3"}>Fin Us On</h4>
             <div className={"fin-us-on"}>
-              <div className={"mb-3"}>
+              <div className={"mb-xl-3 download-app"}>
                 <Link href={""} target={"_blank"} className={"mb-3"}>
                   <Image src={btnChPlay} style={{width: "100%", height: "auto"}} alt={""}/>
                 </Link>
                 <Link href={""} target={"_blank"} className={"mb-3"}>
-                  <Image className={"mt-2"} src={btnAppstore} style={{width: "100%", height: "auto"}} alt={""}/>
+                  <Image className={"mt-2 mb-xl-3"} src={btnAppstore} style={{width: "100%", height: "auto"}} alt={""}/>
                 </Link>
               </div>
               <div className={"text-center w-100 d-flex justify-content-center "}>

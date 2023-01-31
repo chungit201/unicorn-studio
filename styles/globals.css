@@ -90,7 +90,7 @@ a{
 .banner {
     position: relative;
     margin-top: -1px;
-    background-image: url("../common/assets/images/bg_1.webp");
+    background-image: url("../common/assets/images/bg_1.png");
     height: calc(100vh - 92px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,6 +121,9 @@ a{
 }
 
 @media (max-width: 576px) {
+    .download-app{
+        margin-right: 4rem !important;
+    }
     .slick_slider{
         display: none;
     }

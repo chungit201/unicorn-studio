@@ -26,7 +26,7 @@ export default function App({Component, pageProps}: AppProps) {
 
   useEffect(() => {
     setProgress(false)
-  }, [prevLoc])
+  }, [prevLoc]);
 
   const MainLayout = () => (
     <Component {...pageProps} />
