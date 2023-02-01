@@ -425,7 +425,11 @@ a{
 .slider-whir{
     overflow: hidden !important;
 }
-.frame_inactive{
+.inactive_slider{
+    transform: translateY(15px);
+    opacity: 0.8;
+}
+.frame_inactive,.frame_active{
     position: absolute;
     width: 100%;
     top: 0;
