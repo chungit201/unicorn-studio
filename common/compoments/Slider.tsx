@@ -8,7 +8,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Whirligig from 'react-whirligig'
 import CarouselItem from "@/common/compoments/CarouselItem";
 
-const data = [
+export const dataSlider = [
   {
     img: slider1,
     title: "Startverse",
@@ -58,7 +58,7 @@ const Slider: React.FunctionComponent = () => {
   let whirligig: any
   const next = () => {
     whirligig.next();
-    if (slideIndex < data.length) {
+    if (slideIndex < dataSlider.length -3) {
       setSlideIndex(slideIndex + 1)
     }
   }
@@ -89,7 +89,7 @@ const Slider: React.FunctionComponent = () => {
           whirligig = _whirligigInstance
         }}
       >
-        {data.map((item,index) => {
+        {dataSlider.map((item,index) => {
           return (
             <CarouselItem
               key={item.title}
