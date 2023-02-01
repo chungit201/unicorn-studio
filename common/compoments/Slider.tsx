@@ -43,15 +43,18 @@ export const dataSlider = [
 
 const Slider: React.FunctionComponent = () => {
   const [visibleSlides, setVisibleSlides] = useState(3);
-  const [slideIndex, setSlideIndex] = useState(0)
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [isMobile,setIsMobile] = useState(false)
   useEffect(() => {
     console.log(window.innerWidth)
     if (window.innerWidth > 976) {
       setVisibleSlides(3)
-    } else if (976 < window.innerWidth && window.innerWidth > 578) {
-      setVisibleSlides(2)
+    } else if (976 > window.innerWidth && window.innerWidth > 578) {
+      setVisibleSlides(1);
+      setIsMobile(true)
     } else {
-      setVisibleSlides(2)
+      setIsMobile(true)
+      setVisibleSlides(1)
     }
   }, [])
 
@@ -92,6 +95,7 @@ const Slider: React.FunctionComponent = () => {
         {dataSlider.map((item,index) => {
           return (
             <CarouselItem
+              isMobile={isMobile}
               key={item.title}
               index={index}
               item={item}

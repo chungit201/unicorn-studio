@@ -167,7 +167,9 @@ a{
 }
 
 @media (max-width: 976px) {
-
+    .slider-desc{
+        font-size: 18px !important  ;
+    }
     .slick_slider{
         bottom: 0rem;
     }
