@@ -90,7 +90,7 @@ a{
 .banner {
     position: relative;
     margin-top: -1px;
-    background-image: url("../common/assets/images/bg_1.png");
+    background-image: url("../common/assets/images/bg_1.webp");
     height: calc(100vh - 92px);
     background-size: cover;
     background-repeat: no-repeat;
