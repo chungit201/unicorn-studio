@@ -7,7 +7,7 @@ import twitter from "../assets/images/social/twiter.png";
 import inImg from "../assets/images/social/in.png";
 import btnChPlay from "../assets/images/btn-ch-play.png";
 import btnAppstore from "../assets/images/appstore-btn.png";
-import LogoSmall from "../assets/images/logo-small.png"
+import LogoSmall from "../assets/images/logo-small.png";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -65,7 +65,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className={"slick_slider"}>
+          <div className={"slick_slider wow animate__animated animate__fadeInUp"}>
             <Slider/>
           </div>
         </div>
