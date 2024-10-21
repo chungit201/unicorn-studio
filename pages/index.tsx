@@ -43,6 +43,14 @@ export default function Home() {
     console.log("g", heightControl.offsetHeight)
   }, []);
 
+  useEffect(()=>{
+    window.onscroll = (e) =>{
+      console.log(window.scrollY);
+      const pageContent:any = document.getElementById('page-content');
+      pageContent.style.marginTop = "107px"
+    }
+  },[])
+
   useEffect(() => {
     (async () => {
       new WOW.WOW().init();
@@ -50,7 +58,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div id={"page-content"}>
       <div className="banner">
         <div className="h-100">
           <div className="wow animate__animated animate__fadeIn main-content-banner m-auto">

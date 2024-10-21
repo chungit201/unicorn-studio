@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Image from "next/image";
 import logo from "../assets/images/logo.png"
 import {Nav, Navbar, Offcanvas} from "react-bootstrap";
@@ -36,7 +36,7 @@ const HeaderPage: React.FunctionComponent = () => {
   }
 
   return (
-    <div>
+    <div className={"header-top"}>
       <div className="header">
         <div className="d-flex justify-content-between align-items-center">
           <Link href={"/"}>
@@ -52,7 +52,7 @@ const HeaderPage: React.FunctionComponent = () => {
           </Link>
         </div>
       </div>
-      <Navbar expand={'md'}>
+      <Navbar id={"sub-nav"} expand={'md'}>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`}/>
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-md`}
